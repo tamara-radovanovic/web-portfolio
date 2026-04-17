@@ -1,8 +1,16 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import HomePage from "./pages/HomePage"
+import ProjectDetailPage from "./pages/ProjectDetailPage"
+import NotFoundPage from "./pages/NotFoundPage";
 function App() {
   return (
-    <div>
-      <h1>Portfolio</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/projects/:id" element={<ProjectDetailPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
