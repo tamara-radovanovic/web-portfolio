@@ -6,14 +6,11 @@ export const personal = {
   location: 'Serbia',
   bio: 'Recent Information Technology graduate focused on web development and modern frontend technologies. Motivated to apply academic knowledge in practice, quickly learn new tools, and contribute to collaborative development teams.',
 
-  // Linkovi ka društvenim mrežama i profilima
   links: {
     github: 'https://github.com/tamara-radovanovic',
     linkedin: 'https://linkedin.com/in/tamara-radovanovic13',
   },
 
-  // PDF CV koji će biti u public/ folderu
-  // Visitor može da klikne i preuzme fajl direktno
   cvUrl: '/cv.pdf',
 
   experience: [
