@@ -1,5 +1,11 @@
+import { Hero } from "../sections/Hero";
+
 function HomePage(){
-    return <div className="p-8 text-2xl">Home Page</div>
+    return (
+        <main>
+            <Hero />
+        </main>
+    )
 }
 
 export default HomePage;
