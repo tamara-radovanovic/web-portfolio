@@ -43,10 +43,16 @@ export const personal = {
   education: [
     {
       degree: 'Bachelor of Information Technology',
-      institution: 'Faculty of Applied Management, Economics and Finance',
+      institution: 'Faculty of Applied Management, Economics and Finance (MEF)',
       location: 'Belgrade, Serbia',
       period: '2021 – 2025',
       thesis: 'Application of Supercomputers in Industry: The Role of Artificial Intelligence in Process Optimization',
+      description: [
+      'During my studies I developed a foundation in software development, web technologies, and database systems. ' ,
+      'I gained experience working with programming languages such as Python, PHP, Java, and JavaScript, along with HTML and CSS for web development. ', 
+      'My coursework also included database fundamentals and data management concepts. ', 
+      'In addition, I worked with graphic design tools including Adobe Illustrator, Photoshop, XD, and Figma, and was introduced to Arduino and basic hardware interaction as part of my studies.', 
+      ],
     },
   ],
 
