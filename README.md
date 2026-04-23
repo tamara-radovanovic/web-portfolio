@@ -50,6 +50,7 @@ src/
 ### Installation
 
 ```bash
+git clone https://github.com/tamara-radovanovic/web-portfolio.git
 cd web-portfolio
 npm install
 ```
