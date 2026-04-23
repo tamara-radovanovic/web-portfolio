@@ -2,6 +2,7 @@ import { Hero } from "../sections/Hero";
 import { About } from "../sections/About";
 import { Contact } from "../sections/Contact"
 import { Skills } from "../sections/Skills";
+import { Projects } from "../sections/Projects";
 
 function HomePage(){
     return (
@@ -9,6 +10,7 @@ function HomePage(){
             <Hero />
             <About />
             <Skills/>
+            <Projects/>
             <Contact/>
         </main>
     )
