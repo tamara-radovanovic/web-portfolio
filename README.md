@@ -1,73 +1,65 @@
-# React + TypeScript + Vite
+# Tamara Radovanović — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website built with React 19, TypeScript, and Tailwind CSS v4. Features a responsive design with dark/light theme toggle, smooth animations, and project detail pages.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+> Add your deployed URL here (Vercel, Netlify, GitHub Pages, etc.)
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Responsive layout — works on mobile, tablet, and desktop
+- Dark / light theme toggle with persistent preference
+- Animated sections using Motion (Framer Motion v12)
+- Client-side routing with React Router v7
+- Project detail pages with full descriptions and tech stack
+- CV download
+- 404 page
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Category       | Technologies                                              |
+| -------------- | --------------------------------------------------------- |
+| Framework      | React 19, TypeScript                                      |
+| Styling        | Tailwind CSS v4, CSS Modules                              |
+| Animations     | Motion (Framer Motion v12)                                |
+| Routing        | React Router DOM v7                                       |
+| Build Tool     | Vite 8                                                    |
+| Linting        | ESLint 9, typescript-eslint                               |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Project Structure
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+├── assets/          # Images and static assets
+├── components/      # Reusable UI components (Navbar)
+├── data/            # Static content — personal info, skills, projects
+├── hooks/           # Custom React hooks (useTheme)
+├── pages/           # Route-level pages (Home, NotFound)
+├── sections/        # Page sections (Hero, About, Skills, Contact)
+├── types/           # Shared TypeScript types
+└── main.tsx         # App entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Prerequisites
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+```bash
+cd my-portfolio
+npm install
 ```
+
+### Development
+
+```bash
+npm run dev
+```
+
+Opens at `http://localhost:5173`
+
