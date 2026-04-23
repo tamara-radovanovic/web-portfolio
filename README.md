@@ -1,6 +1,6 @@
 # Tamara Radovanović — Portfolio
 
-Personal portfolio website built with React 19, TypeScript, and Tailwind CSS v4. Features a responsive design with dark/light theme toggle, smooth animations, and project detail pages.
+Personal portfolio website built with React 19, TypeScript, and Tailwind CSS v4. Features a responsive design with dark/light theme toggle and smooth animations.
 
 ## Live Demo
 
@@ -12,7 +12,6 @@ Personal portfolio website built with React 19, TypeScript, and Tailwind CSS v4.
 - Dark / light theme toggle with persistent preference
 - Animated sections using Motion (Framer Motion v12)
 - Client-side routing with React Router v7
-- Project detail pages with full descriptions and tech stack
 - CV download
 - 404 page
 
@@ -36,7 +35,7 @@ src/
 ├── data/            # Static content — personal info, skills, projects
 ├── hooks/           # Custom React hooks (useTheme)
 ├── pages/           # Route-level pages (Home, NotFound)
-├── sections/        # Page sections (Hero, About, Skills, Contact)
+├── sections/        # Page sections (Hero, About, Skills, Projects, Contact)
 ├── types/           # Shared TypeScript types
 └── main.tsx         # App entry point
 ```
@@ -51,7 +50,7 @@ src/
 ### Installation
 
 ```bash
-cd my-portfolio
+cd web-portfolio
 npm install
 ```
 
