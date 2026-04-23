@@ -10,14 +10,10 @@ export const skills: Skill[] = [
   },
   {
     category: 'Backend & Databases',
-    items: ['NestJS', 'PHP', 'Python', 'Java', 'MySQL', 'SQLite'],
+    items: ['NestJS', 'PHP', 'MySQL', 'SQLite', 'PostgreSQL', 'TypeORM'],
   },
   {
     category: 'Tools & Platforms',
     items: ['Microsoft Office', 'Git', 'GitLab', 'GitHub', 'REST API', 'Figma', 'Adobe Illustrator', 'Adobe Photoshop','Adobe XD','Canva', 'AI Tools'],
-  },
-  {
-    category: 'Currently Learning',
-    items: ['NestJS'],
   },
 ]
