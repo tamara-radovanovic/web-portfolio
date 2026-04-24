@@ -141,35 +141,6 @@
   outline-offset: 6px;
 }
 
-/*Entrance animations*/
-
-@keyframes fadeSlideUp {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animGreeting,
-.animName,
-.animTitle,
-.animActions,
-.animLinks,
-.animImage {
-  animation: fadeSlideUp 0.6s ease both;
-}
-
-.animGreeting { animation-delay: 0.05s; }
-.animName     { animation-delay: 0.2s;  }
-.animTitle    { animation-delay: 0.35s; }
-.animActions  { animation-delay: 0.5s;  }
-.animLinks    { animation-delay: 0.65s; }
-.animImage    { animation-delay: 0.8s;  }
-
 /* Mobile*/
 @media (max-width: 768px) {
   .container {

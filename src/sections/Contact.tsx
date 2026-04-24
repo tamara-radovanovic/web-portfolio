@@ -1,16 +1,9 @@
 import { personal } from "../data/personal";
-import { useInView } from "../hooks/useInView";
 import styles from "./Contact.module.css";
 
 export function Contact() {
-  const { ref, inView } = useInView()
-
   return (
-    <section
-      id="contact"
-      ref={ref}
-      className={`${styles.section} fade-in-section ${inView ? 'is-visible' : ''}`}
-    >
+    <section id="contact" className={styles.section}>
       <div className={styles.container}>
 
         <div className={styles.sectionHeader}>

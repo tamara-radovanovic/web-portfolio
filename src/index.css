@@ -77,29 +77,3 @@ img {
 body, header, section, div, a, button {
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
-
-/* ── Scroll-triggered fade-in */
-
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(32px);
-  transition:
-    opacity 0.65s ease,
-    transform 0.65s ease,
-    background-color 0.2s ease,
-    border-color 0.2s ease,
-    color 0.2s ease;
-}
-
-.fade-in-section.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .fade-in-section {
-    opacity: 1;
-    transform: none;
-    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
-  }
-}

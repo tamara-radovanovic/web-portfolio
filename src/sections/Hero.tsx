@@ -9,11 +9,11 @@ export function Hero() {
 
         {/* Left column — text */}
         <div className={styles.content}>
-          <p className={`${styles.greeting} ${styles.animGreeting}`}>Hello, I'm</p>
-          <h1 className={`${styles.name} ${styles.animName}`}>{personal.name}</h1>
-          <h2 className={`${styles.title} ${styles.animTitle}`}>{personal.title}</h2>
-
-          <div className={`${styles.actions} ${styles.animActions}`}>
+          <p className={styles.greeting}>Hello, I'm</p>
+          <h1 className={styles.name}>{personal.name}</h1>
+          <h2 className={styles.title}>{personal.title}</h2>
+          
+          <div className={styles.actions}>
             <a
               href={personal.cvUrl}
               download
@@ -29,7 +29,7 @@ export function Hero() {
             </a>
           </div>
 
-          <div className={`${styles.links} ${styles.animLinks}`}>
+          <div className={styles.links}>
             <a
               href={personal.links.github}
               target="_blank"
@@ -50,7 +50,7 @@ export function Hero() {
         </div>
 
         {/* Right column — image */}
-        <div className={`${styles.imageWrapper} ${styles.animImage}`}>
+        <div className={styles.imageWrapper}>
           <img
             src={profileImage}
             alt="Tamara Radovanović"

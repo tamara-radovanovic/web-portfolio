@@ -1,17 +1,9 @@
-import React from 'react'
 import { projects } from '../data/projects'
-import { useInView } from '../hooks/useInView'
 import styles from './Projects.module.css'
 
 export function Projects() {
-  const { ref, inView } = useInView()
-
   return (
-    <section
-      id="projects"
-      ref={ref}
-      className={`${styles.section} fade-in-section ${inView ? 'is-visible' : ''}`}
-    >
+    <section id="projects" className={styles.section}>
       <div className={styles.container}>
 
         <div className={styles.sectionHeader}>
@@ -20,17 +12,8 @@ export function Projects() {
         </div>
 
         <div className={styles.grid}>
-          {projects.map((project, index) => (
-            <div
-              key={project.id}
-              className={styles.card}
-              style={{ '--card-delay': `${index * 0.15}s` } as React.CSSProperties}
-              onAnimationEnd={(e) => {
-                e.currentTarget.style.opacity = '1'
-                e.currentTarget.style.transform = 'none'
-                e.currentTarget.style.animation = 'none'
-              }}
-            >
+          {projects.map(project => (
+            <div key={project.id} className={styles.card}>
 
               <h3 className={styles.cardTitle}>{project.title}</h3>
 
@@ -53,6 +36,7 @@ export function Projects() {
                 >
                   ↗ GitHub
                 </a>
+                {/* liveUrl je opciono — prikazujemo link samo ako postoji */}
                 {project.liveUrl && (
                   <a
                     href={project.liveUrl}
