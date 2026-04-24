@@ -11,7 +11,7 @@ export const personal = {
     linkedin: 'https://linkedin.com/in/tamara-radovanovic13',
   },
 
-  cvUrl: '/cv.pdf',
+  cvUrl: '/Tamara_Radovanović_CV.pdf',
 
   experience: [
     {
