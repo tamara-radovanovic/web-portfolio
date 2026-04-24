@@ -3,7 +3,7 @@ export const personal = {
   title: 'Junior Frontend Developer',
   email: 'tamararadovanovic02@gmail.com',
   location: 'Serbia',
-  bio: 'Recent Information Technology graduate focused on web development and modern frontend technologies. Motivated to apply academic knowledge in practice, quickly learn new tools, and contribute to collaborative development teams.',
+  bio: 'Junior Frontend Developer with production experience in React 18, TypeScript, and REST API integration. Comfortable working in team environments using Git-based version control and agile workflows. Looking to grow within a team that values clean code and modern frontend practices.',
 
   links: {
     github: 'https://github.com/tamara-radovanovic',
