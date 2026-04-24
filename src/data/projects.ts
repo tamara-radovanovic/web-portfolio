@@ -15,7 +15,7 @@ export const projects: Project[] = [
     description: 'Personal portfolio and CV website built with modern frontend technologies.',
     longDescription: 'A personal portfolio website showcasing my projects, skills, and experience. Built with React, TypeScript, Vite, and Tailwind CSS v4.',
     techStack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Motion'],
-    githubUrl: 'GitHub link',
-    liveUrl: 'link'
+    githubUrl: 'https://github.com/tamara-radovanovic/web-portfolio',
+    liveUrl: 'https://web-portfolio-tamara-radovanovic.vercel.app'
   },
 ]

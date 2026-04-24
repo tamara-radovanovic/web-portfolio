@@ -4,7 +4,7 @@ Personal portfolio website built with React 19, TypeScript, and Tailwind CSS v4.
 
 ## Live Demo
 
-> Add your deployed URL here (Vercel, Netlify, GitHub Pages, etc.)
+[web-portfolio-tamara-radovanovic.vercel.app] (https://web-portfolio-tamara-radovanovic.vercel.app/)
 
 ## Features
 
