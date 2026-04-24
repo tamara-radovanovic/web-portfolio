@@ -1,9 +1,17 @@
+import { motion } from 'motion/react'
 import { skills } from '../data/skills';
 import styles from './Skills.module.css';
 
 export function Skills() {
   return (
-    <section id="skills" className={styles.section}>
+    <motion.section
+      id="skills"
+      initial={{ opacity: 0, y: 32 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.12 }}
+      transition={{ duration: 0.65, ease: 'easeOut' }}
+      className={styles.section}
+    >
       <div className={styles.container}>
 
         <div className={styles.sectionHeader}>
@@ -27,6 +35,6 @@ export function Skills() {
         </div>
 
       </div>
-    </section>
+    </motion.section>
   );
 }

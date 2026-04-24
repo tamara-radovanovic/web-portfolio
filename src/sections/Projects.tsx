@@ -1,9 +1,27 @@
+import { motion } from 'motion/react'
+import type { Variants } from 'motion/react'
 import { projects } from '../data/projects'
 import styles from './Projects.module.css'
 
+const cardVariants: Variants = {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
+}
+
+const gridVariants: Variants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.15 } },
+}
+
 export function Projects() {
   return (
-    <section id="projects" className={styles.section}>
+    <motion.section
+      id="projects"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+      className={styles.section}
+    >
       <div className={styles.container}>
 
         <div className={styles.sectionHeader}>
@@ -11,9 +29,9 @@ export function Projects() {
           <div className={styles.accentLine} />
         </div>
 
-        <div className={styles.grid}>
+        <motion.div variants={gridVariants} className={styles.grid}>
           {projects.map(project => (
-            <div key={project.id} className={styles.card}>
+            <motion.div key={project.id} variants={cardVariants} className={styles.card}>
 
               <h3 className={styles.cardTitle}>{project.title}</h3>
 
@@ -36,7 +54,6 @@ export function Projects() {
                 >
                   ↗ GitHub
                 </a>
-                {/* liveUrl je opciono — prikazujemo link samo ako postoji */}
                 {project.liveUrl && (
                   <a
                     href={project.liveUrl}
@@ -49,11 +66,11 @@ export function Projects() {
                 )}
               </div>
 
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
       </div>
-    </section>
+    </motion.section>
   )
 }

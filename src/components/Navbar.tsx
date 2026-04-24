@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { motion } from 'motion/react'
 import { useTheme } from '../hooks/useTheme'
 import styles from './Navbar.module.css'
 
@@ -14,7 +15,12 @@ export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header className={styles.header}>
+    <motion.header
+      initial={{ y: -80 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.4, ease: 'easeOut' }}
+      className={styles.header}
+    >
       <nav className={styles.nav}>
 
         {/* Logo */}
@@ -76,6 +82,6 @@ export function Navbar() {
           </button>
         </div>
       )}
-    </header>
+    </motion.header>
   )
 }

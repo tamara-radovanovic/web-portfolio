@@ -1,4 +1,4 @@
-export interface Project{
+export interface Project {
     id: string
     title: string
     description: string
@@ -6,6 +6,4 @@ export interface Project{
     techStack: string[]
     githubUrl: string
     liveUrl?: string
-    imageUrl?: string
-    featured: boolean 
 }

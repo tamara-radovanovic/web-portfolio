@@ -1,9 +1,17 @@
+import { motion } from 'motion/react'
 import { personal } from "../data/personal";
 import styles from "./Contact.module.css";
 
 export function Contact() {
   return (
-    <section id="contact" className={styles.section}>
+    <motion.section
+      id="contact"
+      initial={{ opacity: 0, y: 32 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.12 }}
+      transition={{ duration: 0.65, ease: 'easeOut' }}
+      className={styles.section}
+    >
       <div className={styles.container}>
 
         <div className={styles.sectionHeader}>
@@ -31,6 +39,6 @@ export function Contact() {
         </div>
 
       </div>
-    </section>
+    </motion.section>
   );
 }

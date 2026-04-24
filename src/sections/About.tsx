@@ -1,9 +1,17 @@
+import { motion } from 'motion/react'
 import { personal } from '../data/personal'
 import styles from './About.module.css'
 
 export function About() {
   return (
-    <section id="about" className={styles.section}>
+    <motion.section
+      id="about"
+      initial={{ opacity: 0, y: 32 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.12 }}
+      transition={{ duration: 0.65, ease: 'easeOut' }}
+      className={styles.section}
+    >
       <div className={styles.container}>
 
         <div className={styles.sectionHeader}>
@@ -60,6 +68,6 @@ export function About() {
 
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
