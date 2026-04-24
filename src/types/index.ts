@@ -6,6 +6,4 @@ export interface Project{
     techStack: string[]
     githubUrl: string
     liveUrl?: string
-    imageUrl?: string
-    featured: boolean 
 }

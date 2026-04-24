@@ -1,9 +1,16 @@
 import { personal } from '../data/personal'
+import { useInView } from '../hooks/useInView'
 import styles from './About.module.css'
 
 export function About() {
+  const { ref, inView } = useInView()
+
   return (
-    <section id="about" className={styles.section}>
+    <section
+      id="about"
+      ref={ref}
+      className={`${styles.section} fade-in-section ${inView ? 'is-visible' : ''}`}
+    >
       <div className={styles.container}>
 
         <div className={styles.sectionHeader}>

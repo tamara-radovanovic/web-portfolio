@@ -1,5 +1,5 @@
 .section {
-  padding: 6rem 1.5rem;
+  padding: 2.5rem 1.5rem;
   background-color: var(--bg-secondary);
 }
 
@@ -9,7 +9,7 @@
 }
 
 .sectionHeader {
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 .sectionTitle {
@@ -33,6 +33,11 @@
   gap: 2rem;
 }
 
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 .card {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
@@ -42,6 +47,14 @@
   display: flex;
   flex-direction: column;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: fadeSlideUp 0.5s ease both;
+  animation-delay: var(--card-delay, 0s);
+  animation-play-state: paused;
+}
+
+/* When parent section becomes visible, release all card animations */
+:global(.is-visible) .card {
+  animation-play-state: running;
 }
 
 .card:hover {
