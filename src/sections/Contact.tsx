@@ -27,12 +27,6 @@ export function Contact() {
             </a>
           </div>
           <div className={styles.contactItem}>
-            <span className={styles.label}>Phone</span>
-            <a href={`tel:${personal.phone}`} className={styles.value}>
-              {personal.phone}
-            </a>
-          </div>
-          <div className={styles.contactItem}>
             <span className={styles.label}>Location</span>
             <span className={styles.value}>{personal.location}</span>
           </div>

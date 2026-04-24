@@ -2,7 +2,6 @@ export const personal = {
   name: 'Tamara Radovanović',
   title: 'Junior Frontend Developer',
   email: 'tamararadovanovic02@gmail.com',
-  phone: '+381 611482440',
   location: 'Serbia',
   bio: 'Recent Information Technology graduate focused on web development and modern frontend technologies. Motivated to apply academic knowledge in practice, quickly learn new tools, and contribute to collaborative development teams.',
 
